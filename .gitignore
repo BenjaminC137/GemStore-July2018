@@ -37,3 +37,9 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
