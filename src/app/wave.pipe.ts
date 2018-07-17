@@ -17,5 +17,4 @@ export class WavePipe implements PipeTransform {
       }
     return result;
   }
-
 }
