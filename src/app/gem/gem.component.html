@@ -1,3 +1,25 @@
-<p>
-  gem works!
-</p>
+<div class="card" style="width: 12rem">
+  <img class="card-img-top" src="{{gem.fullImagePath}}" alt="{{gem.name}}">
+  <div class="card-body">
+    <h5 class="card-title">{{gem.name}}</h5>
+	  <app-tabs [gem] = "gem"></app-tabs>
+    <p class="card-text">
+	{{gem.description}}</p>
+	  <p *ngIf="gem.inventory > 0 && gem.inventory <6" style="color: red">
+	  Hurry! Only {{gem.inventory}} left!
+	  </p>
+	  COLORS:
+	  <br>
+	  <ul>
+		  <li option *ngFor="let color of gem.colors">{{color}}</li>
+	  </ul>
+	  <select class="form-control">
+	<option *ngFor="let color of gem.colors">{{color}}</option>
+	  </select>
+	  <button *ngIf="gem.inventory > 0" class="btn btn-default" (click)= "addToCart()">Add to Cart</button>
+	  <button *ngIf="gem.inventory <= 0" class="btn btn-danger" disabled>Sold Out!</button>
+	   {{gem.price | currency}}
+	  <br>
+	<br>
+  </div>
+</div>
