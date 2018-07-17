@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
+import { CartItemModel } from './cart-item-model';
+import { CartModel } from './cart-model';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'GemStore-July2018';
-  year = new Date().getFullYear();
-  sum = 4 + 2;
-  numbers = [1,2,3,4,5];
-  dog = { name: 'bill', isHungry: true};
+//  @Input() cart: CartModel;
+//  title = 'GemStore-July2018';
+//  year = new Date().getFullYear();
+//  sum = 4 + 2;
+//  numbers = [1,2,3,4,5];
+//  dog = { name: 'bill', isHungry: true};
+
+cart: CartModel = {
+	items: [],
+	totalquantity: 0,
+	totalprice: 0
+	}
 }

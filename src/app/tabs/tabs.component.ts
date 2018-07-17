@@ -8,11 +8,16 @@ import {GemModel} from '../gem-model';
   styleUrls: ['./tabs.component.css']
 })
 export class TabsComponent implements OnInit {
+	tab: number;
 @Input()
 gem: GemModel;
+cart: CartModel;
   constructor() { }
-
   ngOnInit() {
+	  this.tab = 1;
   }
-
+setTab(selectedTab: number){
+	this.tab = selectedTab;
+//	return false;
+}
 }

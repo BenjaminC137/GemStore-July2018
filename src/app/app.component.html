@@ -1,4 +1,4 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar [cart] = 'cart'></app-nav-bar>
 
 <h1>{{title}}</h1>
 <div class="container">
@@ -6,5 +6,5 @@
 </p>   <p>
 Is {{dog.name}} hungry? {{dog.isHungry}}
 </p> -->
-<app-home></app-home>
+<app-home [cart]="cart"></app-home>
 </div>

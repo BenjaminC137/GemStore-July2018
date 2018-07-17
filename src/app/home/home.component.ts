@@ -1,6 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 import { GemModel } from '../gem-model';
+
+import { CartItemModel } from '../cart-item-model';
+
+import { CartModel } from '../cart-model';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +12,8 @@ import { GemModel } from '../gem-model';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+	@Input()
+	cart: CartModel;
 homeGems: GemModel[] = [
 	{
 id: 1,
