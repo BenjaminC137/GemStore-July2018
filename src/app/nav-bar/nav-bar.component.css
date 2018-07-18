@@ -26,7 +26,8 @@ h2{
 
 a{
     text-decoration: none;
-    color: #E5AD24;
+/*    color: #E5AD24;*/
+	margin: 1px;
 }
 a:hover{
 	color: #00878F;

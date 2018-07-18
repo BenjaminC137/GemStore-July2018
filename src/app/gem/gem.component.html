@@ -1,21 +1,25 @@
-<div class="card" style="width: 12rem">
+<div class="card border-light m-2 container" style="width: 13rem">
   <img class="card-img-top" src="{{gem.fullImagePath}}" alt="{{gem.name}}">
-  <div class="card-body">
+  <div class="card-body row align-items-start">
+	  <div col>
     <h5 class="card-title">{{gem.name}}</h5>
 	  <app-tabs [gem] = "gem"></app-tabs>
 	  <p *ngIf="gem.inventory > 0 && gem.inventory <6" style="color: red">
 	  Hurry! Only {{gem.inventory}} left!
 	  </p>
+	  </div>
+<!--<div class="mt-auto">-->
+	<div class="row align-self-end">
+
 	  COLORS:
 	  <br>
 
 	  <select class="form-control">
 	<option *ngFor="let color of gem.colors">{{color}}</option>
 	  </select>
-	  <button *ngIf="gem.inventory > 0" class="btn btn-default" (click)= "addToCart()">Add to Cart</button>
+	  <button *ngIf="gem.inventory > 0" class="btn btn-success" (click)= "addToCart()">Add to Cart</button>
 	  <button *ngIf="gem.inventory <= 0" class="btn btn-danger" disabled>Sold Out!</button>
-	   {{gem.price | currency}}
-	  <br>
-	<br>
+	  <div class="costButton"> {{gem.price | currency}}</div>
   </div>
+</div>
 </div>

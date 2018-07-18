@@ -18,6 +18,6 @@ cart: CartModel;
   }
 setTab(selectedTab: number){
 	this.tab = selectedTab;
-//	return false;
+	return false;
 }
 }

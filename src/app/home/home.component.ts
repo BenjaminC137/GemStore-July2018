@@ -28,7 +28,7 @@ colors: ['red', 'blue', 'green']
 id: 2,
 name: 'Pentagonal',
 price: 57.99,
-description: 'some gems have special properties. This one is super special. Okay? okay he says.',
+description: 'some gems have special properties. This one is super special. Okay? okay he says. I think you should probably at least buy this one because it\'s very beautifyl, and there is no reason you should not ',
 fullImagePath: './assets/gem-02.gif',
 inventory: 0,
 colors: ['orange', 'skyblue', 'yellow']

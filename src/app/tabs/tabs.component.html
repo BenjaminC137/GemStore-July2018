@@ -1,18 +1,18 @@
 <ul class="nav nav-pills">
 	<li class="nav-item">
-		<a class="nav-link" href="#" (click)="tab = 1"[class.active]="tab === 1">Description</a>
+		<a class="nav-link" href="#" (click)="setTab(1)"[class.active]="tab === 1">Description</a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#" (click)="tab = 2"[class.active]="tab === 2">Colors</a>
+		<a class="nav-link" href="#" (click)="setTab(2)"[class.active]="tab === 2">Colors</a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#" (click)="setTab"[class.active]="tab === 3">Reviews</a>
+		<a class="nav-link" href="#" (click)="setTab(3)"[class.active]="tab === 3">Reviews</a>
 	</li>
 </ul>
 <div *ngIf="tab === 1">
-<p class="card-text">
+<p class="card-text m-2">
 	{{gem.description}}</p>
-	<br>
+
 </div>
 <div *ngIf="tab === 2">
 <ul>

@@ -1,14 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
 html{
-	background-color: wheat;
+	background-color: darkgoldenrod;
 	font-family: cursive;
+}
+.nav-pills{
+
+}
+.row{
+	margin: 0px;
 }
 body{
 	margin: 65px 10px 10px 10px;
-	background-color: aliceblue;
+	background-color: skyblue;
 	border-bottom-style: hidden;
 	border-radius: 50px;
-	padding: 25px;
+	padding: 8px;
+	font-size: 12px;
+}
+.nav-item{
+background-color: aliceblue;
+}
+
+.nav-link{
+		margin: 2px;
+	padding: 2px;
+}
+.card-body{
+/*	height: 100%;*/
+	border-style: hidden;
+	border-radius: 15px;
+	padding: 5px;
 }
 .sticky-nav{
 	position: sticky;
@@ -17,9 +39,83 @@ body{
 .sticky-top{
 	top: 10px;
 }
+.form-control{
+	margin: 5px;
+	font-size: 12px;
+/*	padding: 2px;*/
+}
+/*
+option{
+	font-size: 12px;
+	margin: 5px;
+	padding: 5px;
+}
+*/
+.btn{
+	border-style: hidden;
+	border-radius: 20px;
+	font-size: 16px;
 
+/*
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+*/
+}
+.btn-success{
+	border-style: hidden;
+	font-size: 12px;
+	padding: 5px;
+	margin: 5px;
+}
+.btn-danger{
+	border-style: hidden;
+	font-size: 12px;
+	padding: 5px;
+	margin: 5px;
+}
+.card-group{
+		border-style: hidden;
+	border-radius: 25px;
+}
+.card: first-child{
+	border-style: hidden;
+	border-radius: 25px;
+}
+.border-light{
+	border-style: hidden;
+	border-radius: 25px !important;
+
+}
+.card-img-top{
+	padding-top: 15px;
+	border-radius: 50px !important;
+}
+.navbar-brand{
+	color: darkgoldenrod;
+}
+.costButton{
+	padding: 3px;
+	margin: 10px;
+	text-align: center;
+	background-color: green;
+	color: greenyellow;
+	border-radius: 10px;
+}
+.cartButton{
+/*	padding: 10px;*/
+	margin: 10px;
+	text-align: center;
+	background-color:darkgoldenrod;
+	color: lightgoldenrodyellow;
+	border-radius: 10px;
+}
 app-nav-bar{
 	position: sticky;
 	top: 10px;
 	z-index: 1;
+}
+.card-title{
+	font-size: 12px;
 }
