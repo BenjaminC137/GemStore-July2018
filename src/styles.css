@@ -4,14 +4,11 @@ html{
 	background-color: darkgoldenrod;
 	font-family: cursive;
 }
-.nav-pills{
-
-}
 .row{
 	margin: 0px;
 }
 body{
-	margin: 65px 10px 10px 10px;
+	margin: 10vh 1vh 1vw 1vw;
 	background-color: skyblue;
 	border-bottom-style: hidden;
 	border-radius: 50px;
@@ -63,6 +60,9 @@ option{
 	align-self: center;
 */
 }
+.container{
+	margin: 0px;
+}
 .btn-success{
 	border-style: hidden;
 	font-size: 12px;
@@ -79,9 +79,11 @@ option{
 		border-style: hidden;
 	border-radius: 25px;
 }
-.card: first-child{
+.card{
 	border-style: hidden;
 	border-radius: 25px;
+	align-items: center;
+	padding: 5px;
 }
 .border-light{
 	border-style: hidden;
@@ -91,10 +93,38 @@ option{
 .card-img-top{
 	padding-top: 15px;
 	border-radius: 50px !important;
+	box-shadow: 2px 2px 3px;
+	max-width: 250px;
+/*	text-align: center;*/
+/*	filter: hue-rotate(160deg);*/
+/*	filter: invert();*/
+
 }
 .navbar-brand{
 	color: darkgoldenrod;
 }
+.blockquote{
+	font-size: 10px;
+}
+.red{
+	filter: saturate(2);
+}
+.pink{
+		filter: hue-rotate(-45deg);
+
+}
+.green{
+	filter: hue-rotate(100deg);
+}
+
+.blue{
+	filter: hue-rotate(200deg);
+}
+/*
+.blockquote-footer{
+	font-size: 10px;
+}
+*/
 .costButton{
 	padding: 3px;
 	margin: 10px;

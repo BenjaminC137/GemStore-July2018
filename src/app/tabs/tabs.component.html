@@ -19,5 +19,5 @@
 		  <li option *ngFor="let color of gem.colors">{{color}}</li>
 	  </ul></div>
 <div *ngIf="tab === 3">
-	<p>Coming Soon!</p>
+	<p><app-reviews [gem] = "gem"></app-reviews></p>
 </div>

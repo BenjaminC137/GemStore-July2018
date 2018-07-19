@@ -10,14 +10,11 @@ import { CartModel } from './cart-model';
 export class AppComponent {
 //  @Input() cart: CartModel;
 //  title = 'GemStore-July2018';
-//  year = new Date().getFullYear();
-//  sum = 4 + 2;
-//  numbers = [1,2,3,4,5];
-//  dog = { name: 'bill', isHungry: true};
+  year = new Date().getFullYear();
 
-cart: CartModel = {
-	items: [],
-	totalquantity: 0,
-	totalprice: 0
+	cart: CartModel = {
+		items: [],
+		totalquantity: 0,
+		totalprice: 0
 	}
 }

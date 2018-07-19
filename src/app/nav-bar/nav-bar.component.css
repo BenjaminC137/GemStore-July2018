@@ -3,14 +3,8 @@ html{
     color: #8C7965;
     font-family: sans-serif;
     font-size: 14px;
+	margin: 10px;
 }
-/*	Teal 		#00878F
-	Light Teal	#62AEB2
-	Orange	 	#E47128
-	Yellow		#E5AD24	 rgba(229, 173, 36, .9)
-	Brown 		#8C7965
-	other 		#ECF1F1  rgba(236, 241, 241, .9)   */
-
 h1,h2,h3,h4 {
         color: #00878F;
         text-align: right;
@@ -33,11 +27,12 @@ a:hover{
 	color: #00878F;
 	text-decoration: none;
 }
+/*
 .container{
-/*	padding-right: 500px;*/
 }
+*/
 body{
-	background-color: #ECF1F1;
+	background-color: none;
     margin: 10px;
 	padding: 15px;
     font-size: 12px;
@@ -72,8 +67,7 @@ body p{
 
 .navColors {
 	color: #E5AD24;
-	margin: auto;
-/*	background-color: rgba(0, 135, 143, .9);*/
+	margin: 1vw;
 	background-color: rgba(236, 241, 241, .9);
 		border-radius: 15px;
 
@@ -92,19 +86,13 @@ background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30'
 :focus{
 	outline-color: #E5AD24;
 		outline-width: 3px;
-/*
-	border-style: solid;
-	border-color: aqua;
-	background-color: blueviolet;
-*/
 }
 
 .removePadding{
 	padding: 0;
 }
 footer{
-/*	text-align: center;*/
-/*	text-shadow: 0px 1px .25px white;*/
+
 }
 .top{
 	position: fixed;
@@ -163,11 +151,9 @@ footer{
 	 height: inherit; width: auto;
 	align-content: center;
 	align-items:center;
-/*	text-align: center;*/
 }
 .rounded-image{
 	border-style: hidden;
-/*	border-width: 15px;*/
 	border-radius: 20px;
 }
 
@@ -190,7 +176,6 @@ footer{
 		border-radius: 17px;
 		font-size: 20px;
 		padding: 7px;
-
 	}
 }
 .boxBack{
